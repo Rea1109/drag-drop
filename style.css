@@ -3,9 +3,22 @@ input {
 }
 
 .drag-drop-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 300px;
     height: 300px;
     margin: 150px auto;
     border: 3px dashed lightgray;
     border-radius: 10px;
+
+    color: lightgray;
+}
+
+.active {
+    border: 3px solid #05a9ff;
+    color: #ffff;
+    background-color: #05a9ff;
+    opacity: 0.3;
 }
