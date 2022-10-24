@@ -1,14 +1,11 @@
 .container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
-    background-color: whitesmoke
-}
-
-input {
-    display: none;
+    width: 1000px;
+    height: 700px;
+    margin: auto;
+    border: 3px solid #cccccc;
 }
 
 .drag-drop-area {
@@ -28,5 +25,16 @@ input {
     border: 3px solid #05a9ff;
     color: #ffff;
     background-color: #05a9ff;
-    opacity: 0.3;
+}
+
+.img-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+img {
+    width: 30%;
+    height: 150px;
+    margin: 5px 5px;
 }
