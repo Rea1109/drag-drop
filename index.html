@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/style.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/style.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <title>drag drop test</title>
-</head>
-<body>
-    <div class="container">
-        <div class="drag-drop-area" id="drop-area">
-            <p>이미지 파일을 드래그하여 놓습니다.</p>
-        </div>
-        <div class="img-list">
-            <img class="children" src="https://images.unsplash.com/photo-1666301209888-20b14f76da54?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyM3x8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60" />
-            <img class="children" src="https://plus.unsplash.com/premium_photo-1661961842597-2848e95643be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNXx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60" />
-            <img class="children" src="https://images.unsplash.com/photo-1666356237044-ed1497da256f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60" />
-            <img class="children" src="https://images.unsplash.com/photo-1666459634431-4fcfe6bda2c1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyOXx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60" >
-            <img class="children" src="https://source.unsplash.com/random" />
-            <div style="width: 30%; height:150px; margin:5px; border: 1px solid black;">
-                <img class="div-children" src="https://source.unsplash.com/random" style="width: 100%; height:100%; margin:0px;"/>
-            </div>
-        </div>
-    </div>
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+    <title>shop contents modal</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="modal">
+        <header class="modal-header">
+          <h1>상품 리스트 설정</h1>
+        </header>
+        <nav class="modal-nav">
+          <ul>
+            <li><div>레이아웃</div></li>
+            <li><div>데이터</div></li>
+          </ul>
+        </nav>
+        <nav class="modal-sub-nav"></nav>
+        <div class="modal-body"></div>
+        <footer class="modal-footer">
+          <h1>적용</h1>
+        </footer>
+      </div>
+    </main>
     <script src="/main.js"></script>
-</body>
+  </body>
 </html>
